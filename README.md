@@ -7,10 +7,10 @@ adopting in Amazon Web Services.
 
 > This Policy Library is not an exhaustive list of all of possible configurations and architecture that is available in Amazon Web Services.
 > If you have questions, comments, or have identified ways for us to improve this library,
-> please create [a new GitHub issue](https://github.com/hashicorp/policy-library-aws-ec2-terraform/issues/new/choose).
+> please create [a new GitHub issue](https://github.com/hashicorp/policy-library-cis-aws-ec2-terraform/issues/new/choose).
 >
 > Alternatively, We welcome any contributions that improve the quality of this library!
-> To learn more about contributing and suggesting changes to this library, refer to the [contributing guide](https://github.com/hashicorp/policy-library-aws-ec2-terraform/blob/main/CONTRIBUTING.md).
+> To learn more about contributing and suggesting changes to this library, refer to the [contributing guide](https://github.com/hashicorp/policy-library-cis-aws-ec2-terraform/blob/main/CONTRIBUTING.md).
 
 ### Policies supported via Sentinel
 
