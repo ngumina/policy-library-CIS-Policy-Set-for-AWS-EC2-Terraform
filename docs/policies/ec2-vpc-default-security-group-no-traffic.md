@@ -4,6 +4,14 @@
 |---------------------|------------|
 | Amazon Web Services | Networking |
 
+## CIS versions that include this policy
+
+| Version | Included |
+|---------|----------|
+| 1.2.0   | &check;  |
+| 1.4.0   | &check;  |
+| 3.0.0   | &check;  |
+
 ## Description
 
 DISCLAIMER - This policy will work well if resources of type `aws_vpc`, `aws_default_vpc`, `aws_default_security_group`,

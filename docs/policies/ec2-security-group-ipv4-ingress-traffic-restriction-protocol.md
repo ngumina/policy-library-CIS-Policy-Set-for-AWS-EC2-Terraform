@@ -4,6 +4,14 @@
 |---------------------|--------------|
 | Amazon Web Services | Security     |
 
+## CIS versions that include this policy
+
+| Version | Included |
+|---------|----------|
+| 1.2.0   | &cross;  |
+| 1.4.0   | &cross;  |
+| 3.0.0   | &check;  |
+
 ## Description
 
 DISCLAIMER - This policy works when all resources of type aws_security_group, aws_security_group_rule and aws_vpc_security_group_ingress_rule 

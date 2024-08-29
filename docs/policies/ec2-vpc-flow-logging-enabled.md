@@ -4,6 +4,15 @@
 |---------------------|------------|
 | Amazon Web Services | Networking |
 
+
+## CIS versions that include this policy
+
+| Version | Included |
+|---------|----------|
+| 1.2.0   | &check;  |
+| 1.4.0   | &check;  |
+| 3.0.0   | &cross;  |
+
 ## Description
 
 DISCLAIMER - This policy will work well if `aws_flow_log` resource attribute `vpc_id` 

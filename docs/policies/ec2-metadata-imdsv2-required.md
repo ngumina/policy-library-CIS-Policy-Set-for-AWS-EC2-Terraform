@@ -4,6 +4,14 @@
 |---------------------|------------|
 | Amazon Web Services | Networking |
 
+## CIS versions that include this policy
+
+| Version | Included |
+|---------|----------|
+| 1.2.0   | &cross;  |
+| 1.4.0   | &cross;  |
+| 3.0.0   | &check;  |
+
 ## Description
 
 This controls ensures that Ec2 metadata service only allows IMDSv2. With IMDSv2, every request is now protected by session authentication.

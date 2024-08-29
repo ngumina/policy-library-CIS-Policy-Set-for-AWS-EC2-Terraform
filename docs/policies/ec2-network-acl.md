@@ -4,6 +4,14 @@
 |---------------------|--------------|
 | Amazon Web Services | Security     |
 
+## CIS versions that include this policy
+
+| Version | Included |
+|---------|----------|
+| 1.2.0   | &cross;  |
+| 1.4.0   | &check;  |
+| 3.0.0   | &check;  |
+
 ## Description
 
 DISCLAIMER - This policy works when all resources of type aws_network_acl and aws_network_acl_rule have their `cidr_block` or `ipv6_cidr_block`

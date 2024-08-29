@@ -4,6 +4,14 @@
 |---------------------|--------------|
 | Amazon Web Services | Security     |
 
+## CIS versions that include this policy
+
+| Version | Included |
+|---------|----------|
+| 1.2.0   | &cross;  |
+| 1.4.0   | &check;  |
+| 3.0.0   | &check;  |
+
 ## Description
 
 This control checks whether encryption is enabled for Amazon Elastic Block Store(Amazon EBS).
