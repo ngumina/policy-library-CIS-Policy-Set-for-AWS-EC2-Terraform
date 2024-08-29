@@ -25,3 +25,9 @@ The following CIS standards have equivalent Sentinel policies written for them. 
 - [ec2-security-group-ipv6-ingress-traffic-restriction.md](./docs/policies/ec2-security-group-ipv6-ingress-traffic-restriction.md)
 - [ec2-vpc-default-security-group-no-traffic](./docs/policies/ec2-vpc-default-security-group-no-traffic.md)
 - [ec2-vpc-flow-logging-enabled](./docs/policies/ec2-vpc-flow-logging-enabled.md)
+
+### Minimum Sentinel Version Required
+
+```pre
+0.26.x
+```
