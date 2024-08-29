@@ -47,3 +47,19 @@ policy "ec2-security-group-ipv6-ingress-traffic-restriction" {
     prevent_unknown_ipv4_ingress = false
   }
 }
+
+policy "ec2-security-group-ingress-traffic-restriction-port-22" {
+  source = "./policies/ec2-security-group-ingress-traffic-restriction.sentinel"
+  enforcement_level = "advisory"
+  params = {
+    port = 22
+  }
+}
+
+policy "ec2-security-group-ingress-traffic-restriction-port-3389" {
+  source = "./policies/ec2-security-group-ingress-traffic-restriction.sentinel"
+  enforcement_level = "advisory"
+  params = {
+    port = 3389
+  }
+}
