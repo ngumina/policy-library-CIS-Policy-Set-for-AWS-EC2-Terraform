@@ -12,7 +12,7 @@ import "collection/maps" as maps
 # Params
 
 # port specifies the port number to which ingress traffic should not be allowed from unknown sources.
-param port
+param port default 22
 
 # Constants
 
