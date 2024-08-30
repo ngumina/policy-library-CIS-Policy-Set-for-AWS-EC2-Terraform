@@ -9,4 +9,4 @@ on:
 
 jobs:
   ci:
-    uses: hashicorp/policy-library-workflows-common/.github/workflows/ci.yml@main
+    uses: hashicorp/policy-library-sentinel-workflows-common/.github/workflows/ci.yml@main
