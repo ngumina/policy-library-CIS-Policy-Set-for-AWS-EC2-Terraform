@@ -34,14 +34,14 @@ const = {
 # Removes module address prefix from a resource
 # and returns back the localized address for a module.
 resource_address_without_module_address = func(res) {
-	resource_addr = res[const.address]
+	resource_addr = maps.get(res, const.address, "")
 
 	# Check for root module
 	if not strings.has_prefix(resource_addr, const.module_prefix) {
 		return resource_addr
 	}
 
-	module_addr_prefix = res[const.module_address] + "."
+	module_addr_prefix = maps.get(res, const.module_address, "") + "."
 	return strings.trim_prefix(resource_addr, module_addr_prefix)
 }
 
