@@ -59,9 +59,9 @@ does_rule_reference_port = func(from_port, to_port) {
 }
 
 is_ingress_rule_violation = func(ingress) {
-	return contains_catchall_ip(ingress[const.cidr_block], ingress[const.ipv6_cidr_block]) and
-		(is_catch_all_protocol(ingress[const.protocol]) or
-			does_rule_reference_port(ingress[const.from_port], ingress[const.to_port]))
+	return contains_catchall_ip(maps.get(ingress, const.cidr_block, ""), maps.get(ingress, const.ipv6_cidr_block, "")) and
+		(is_catch_all_protocol(maps.get(ingress, const.protocol, "")) or
+			does_rule_reference_port(maps.get(ingress, const.from_port, null), maps.get(ingress, const.to_port, null)))
 }
 
 # Variables
@@ -70,7 +70,7 @@ planned_resources = tf.plan(tfplan.planned_values.resources)
 
 resources = planned_resources.type(const.resource_aws_network_acl_rule).resources
 aws_network_acl_rule_violations = filter resources as _, res {
-	res.values[const.egress] is false and
+	maps.get(res.values, const.egress, []) is false and
 		is_ingress_rule_violation(res.values)
 }
 
