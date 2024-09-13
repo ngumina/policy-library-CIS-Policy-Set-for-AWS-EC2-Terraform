@@ -31,14 +31,15 @@ for ec2_instance_metadata_defaults_resources as _, res {
 violations = []
 ec2_instance_resources = planned_resources.type(const.aws_instance).resources
 for ec2_instance_resources as _, res {
-	if res.values[const.metadata_options] is not defined {
+	metadata_options_values = maps.get(res.values, const.metadata_options, [])
+	if metadata_options_values is empty {
 		if length(ec2_instance_metadata_defaults_resources) > 0 and all_http_tokens_default_value_is_required {
 			continue
 		}
 		append(violations, res)
 		continue
 	}
-	if res.values[const.metadata_options][0][const.http_tokens] is const.required {
+	if maps.get(metadata_options_values[0], const.http_tokens, "") is const.required {
 		continue
 	}
 	append(violations, res)
