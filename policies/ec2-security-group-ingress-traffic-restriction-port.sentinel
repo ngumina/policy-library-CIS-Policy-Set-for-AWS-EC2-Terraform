@@ -63,9 +63,9 @@ does_rule_reference_port = func(from_port, to_port) {
 }
 
 is_ingress_rule_violation = func(ingress, ipv4_cidr, ipv6_cidr, protocol) {
-	return contains_catchall_ip(ingress[ipv4_cidr], ingress[ipv6_cidr]) and
-		(is_catch_all_protocol(ingress[protocol]) or
-			does_rule_reference_port(ingress[const.from_port], ingress[const.to_port]))
+	return contains_catchall_ip(maps.get(ingress, ipv4_cidr, ""), maps.get(ingress, ipv6_cidr, "")) and
+		(is_catch_all_protocol(maps.get(ingress, protocol, "")) or
+			does_rule_reference_port(maps.get(ingress, const.from_port, null), maps.get(ingress, const.to_port, null)))
 }
 
 # Variables
@@ -74,7 +74,7 @@ plan_resources = tf.plan(tfplan.planned_values.resources)
 
 resources = plan_resources.type(const.resource_security_group_rule).resources
 aws_security_group_rule_violations = collection.reject(resources, func(res) {
-	return not (is_ingress_rule(res.values["type"]) and
+	return not (is_ingress_rule(maps.get(res.values, "type", "")) and
 		is_ingress_rule_violation(res.values, const.cidr_blocks, const.ipv6_cidr_blocks, const.protocol))
 })
 
