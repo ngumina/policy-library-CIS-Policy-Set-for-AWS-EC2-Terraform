@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: BUSL-1.1
+
 # [generate_policy_report](./report.sentinel#32)
 This function returns the formatted string for the corresponding summary object given in the input.
 Formatted string has the violations, if any, in the following format.

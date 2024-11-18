@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: BUSL-1.1
+
 # plan
 
 This function takes in input the map of maps (map of resources) and returns a map with following keys.
