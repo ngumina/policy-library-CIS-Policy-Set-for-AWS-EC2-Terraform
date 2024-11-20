@@ -96,15 +96,15 @@ The documentation for the policy libraries consists of Markdown files within thi
 
 The following CIS standards have equivalent Sentinel policies written for them. These policies get enforced between the `plan` and `apply` phase whenever a run gets queued in TFC/TFE.
 
-- [ec2-ebs-encryption-enabled](./docs/policies/ec2-ebs-encryption-enabled.md)
-- [ec2-metadata-imdsv2-required](./docs/policies/ec2-metadata-imdsv2-required.md)
-- [ec2-network-acl](./docs/policies/ec2-network-acl.md)
-- [ec2-security-group-ingress-traffic-restriction-port-22](./docs/policies/ec2-security-group-ingress-traffic-restriction-port-22.md)
-- [ec2-security-group-ingress-traffic-restriction-port-3389](./docs/policies/ec2-security-group-ingress-traffic-restriction-port-3389.md)
-- [ec2-security-group-ipv4-ingress-traffic-restriction.md](./docs/policies/ec2-security-group-ipv4-ingress-traffic-restriction.md)
-- [ec2-security-group-ipv6-ingress-traffic-restriction.md](./docs/policies/ec2-security-group-ipv6-ingress-traffic-restriction.md)
-- [ec2-vpc-default-security-group-no-traffic](./docs/policies/ec2-vpc-default-security-group-no-traffic.md)
-- [ec2-vpc-flow-logging-enabled](./docs/policies/ec2-vpc-flow-logging-enabled.md)
+- ec2-ebs-encryption-enabled
+- ec2-metadata-imdsv2-required
+- ec2-network-acl
+- ec2-security-group-ingress-traffic-restriction-port-22
+- ec2-security-group-ingress-traffic-restriction-port-3389
+- ec2-security-group-ipv4-ingress-traffic-restriction.md
+- ec2-security-group-ipv6-ingress-traffic-restriction.md
+- ec2-vpc-default-security-group-no-traffic
+- ec2-vpc-flow-logging-enabled
 
 ### Minimum Sentinel Version Required
 
