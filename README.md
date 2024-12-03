@@ -40,7 +40,7 @@ This getting started guide assumes that:
 
 2. You have a user account that is part of the ["owners"](https://developer.hashicorp.com/terraform/cloud-docs/users-teams-organizations/permissions#organization-owners) team or have ["Manage Policies"](https://developer.hashicorp.com/terraform/cloud-docs/users-teams-organizations/permissions#manage-policies) organization-level permissions to create new policy sets and policies.
 
-3. You are using HCP Terraform or Terraform Enterprise [v202312-1](https://developer.hashicorp.com/terraform/enterprise/releases/2023/v202312-1) or a later version.
+3. You are using HCP Terraform or Terraform Enterprise [v202406-1](https://developer.hashicorp.com/terraform/enterprise/releases/2024/v202406-1) or a later version.
 
 4. You are using Sentinel version 0.26.x and later version.
 
