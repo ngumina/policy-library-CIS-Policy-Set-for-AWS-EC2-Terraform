@@ -58,7 +58,7 @@ policy "iam-password-expiry" {
 If you want to change the [enforcement levels](https://developer.hashicorp.com/sentinel/docs/concepts/enforcement-levels) to either `soft-mandatory` or `hard-mandatory`, we recommend updating the contents of the `sentinel.hcl` file in each library before applying the Terraform configuration.
 
 > **Important:**
-The policies in each library are opinionated and depends on a [Sentinel module](https://developer.hashicorp.com/sentinel/docs/extending/modules) documentation.
+The policies in each library are opinionated and depend on a [Sentinel module](https://developer.hashicorp.com/sentinel/docs/extending/modules) documentation.
 >
 To learn more about how to configure a policy set as a [policy evaluation](https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement/manage-policy-sets#policy-evaluations), please review the Terraform Enterprise provider [documentation](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/policy_set#agent_enabled).
 
