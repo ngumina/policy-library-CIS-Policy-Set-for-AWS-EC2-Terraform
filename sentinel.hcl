@@ -11,7 +11,7 @@ import "module" "tfresources" {
 
 policy "ec2-ebs-encryption-enabled" {
   source = "./policies/ec2-ebs-encryption-enabled.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard mandatory"
 }
 
 policy "ec2-network-acl" {
